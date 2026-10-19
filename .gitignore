@@ -1,7 +1,8 @@
-# outdated design previews (regenerate locally if needed)
+# Outdated design previews (regenerate locally if needed)
 preview/
 
-# os / editor junk
+# OS / editor junk
 Thumbs.db
-desktop.ini.DS_Store
+desktop.ini
+.DS_Store
 *.log
