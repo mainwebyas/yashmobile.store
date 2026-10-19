@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — yashmobile.store</title>
+  <meta name="description" content="View product details, specifications and compatibility at yashmobile.store." />
+  <meta name="theme-color" content="#07152b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="pagehero" style="padding:26px 0">
+    <div class="container">
+      <nav class="crumbs" style="margin-bottom:0" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+        <a href="shop.html">Shop</a>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+        <span id="pdpCrumb">Product</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:34px">
+    <div class="container">
+      <div class="pdp" id="pdpInfo">
+        <div class="pdp__gallery">
+          <div class="pdp__main" id="pdpMain"></div>
+          <div class="pdp__thumbs" id="pdpThumbs"></div>
+        </div>
+        <div class="pdp__info">
+          <span class="card__cat" id="pdpCat"></span>
+          <h1 id="pdpTitle">Product</h1>
+          <div class="pdp__rate">
+            <span class="stars" id="pdpStars"></span>
+            <span id="pdpRating"></span>
+          </div>
+          <div class="pdp__price" id="pdpPrice"></div>
+          <p class="pdp__desc" id="pdpDesc"></p>
+
+          <div class="pdp__opt">
+            <h4>Colour</h4>
+            <div class="pdp__swatches" id="pdpColors">
+              <button class="is-active">Black</button>
+              <button>White</button>
+              <button>Blue</button>
+              <button>Clear</button>
+            </div>
+          </div>
+
+          <div class="pdp__buy">
+            <div class="qty">
+              <button id="qtyMinus" aria-label="Decrease quantity">&minus;</button>
+              <input id="pdpQty" type="text" value="1" readonly aria-label="Quantity" />
+              <button id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+            <button class="btn btn--primary" id="pdpAddCart">Add to cart</button>
+            <a class="btn btn--outline" href="cart.html">Go to cart</a>
+          </div>
+
+          <ul class="pdp__meta">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> In stock — usually ships within 24 hours</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 100% secure payment via Razorpay</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Easy returns — exchange as per policy</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Need in bulk? Ask for volume pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="tabs" id="pdpTabs">
+        <button class="is-active" data-tab="tab-desc">Description</button>
+        <button data-tab="tab-spec">Specifications</button>
+        <button data-tab="tab-ship">Shipping &amp; returns</button>
+      </div>
+      <div class="tabpane is-active" id="tab-desc">
+        <p>Chosen for compatibility, build quality and everyday value. Every product at yashmobile.store is inspected before dispatch so you get dependable accessories for your phone, tablet, laptop, smart watch or car — whether you're buying one or a thousand.</p>
+      </div>
+      <div class="tabpane" id="tab-spec">
+        <dl class="spec" id="pdpSpec"></dl>
+      </div>
+      <div class="tabpane" id="tab-ship">
+        <p>Orders are dispatched quickly and shipping is customised as per your convenience. Free shipping on orders above ₹999. Returns and exchanges are available as per our easy-return policy — simply contact support and we'll guide you through it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">You may also like</span>
+          <h2>Related products</h2>
+        </div>
+        <a class="link-arrow" href="shop.html">Shop all
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      </div>
+      <div class="prodgrid" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

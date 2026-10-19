@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yashmobile.store/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://yashmobile.store/shop.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=cases</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=chargers</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=cables</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=powerbank</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=laptop</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=screen</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/shop.html?cat=car</loc><priority>0.7</priority></url>
+  <url><loc>https://yashmobile.store/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yashmobile.store/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yashmobile.store/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://yashmobile.store/terms.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

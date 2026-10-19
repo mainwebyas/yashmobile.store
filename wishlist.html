@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Wishlist — yashmobile.store</title>
+  <meta name="description" content="Products you saved for later at yashmobile.store." />
+  <meta name="theme-color" content="#07152b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="pagehero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+        <span>Wishlist</span>
+      </nav>
+      <h1>Your wishlist</h1>
+      <p>Saved items stay here on this device — tap the heart on any product to add or remove.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Saved for later</span>
+          <h2 id="wishCount">0 items</h2>
+        </div>
+        <a class="link-arrow" href="shop.html">Keep shopping
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      </div>
+      <div class="prodgrid" id="wishGrid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

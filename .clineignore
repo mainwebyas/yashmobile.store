@@ -1,0 +1,35 @@
+# .clineignore — files Cline should NOT read or send as context
+# (mirrors .gitignore semantics; protects secrets & bulky folders)
+
+# Secrets & environment
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+.aws/
+.ssh/
+
+# Dependencies & build output
+node_modules/
+dist/
+build/
+.cache/
+*.log
+
+# Local / editor junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Databases & backups (may hold customer data)
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+backups/
